@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: 'BA37BD8F-D409-3251-AAF5-70EB3CB5CDFB' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libVietnameseConverter.dylib
+current-version:       76
+compatibility-version: 1
+exports:
+  - archs:                [ arm64 ]
+    symbols:              [ ___CFStringEncodingGetVietnameseConverterDefinition ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ dyld_stub_binder ]
+...

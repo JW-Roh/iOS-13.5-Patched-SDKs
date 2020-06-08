@@ -1,0 +1,17 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: 'DD7A2623-BB0E-3326-AF06-76E6ECB2C6C4' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/TextInput/TextInput_he.bundle/TextInput_he
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64 ]
+    objc-classes:         [ _TIKeyboardFeatureSpecialization_he ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ __objc_empty_cache, dyld_stub_binder ]
+    objc-classes:         [ _NSObject, _TIKeyboardFeatureSpecialization ]
+...

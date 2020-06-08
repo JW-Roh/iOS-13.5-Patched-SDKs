@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: '4EAD312F-F98F-39FA-B1C6-BC305DCD359B' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SharingHUD.framework/SharingHUD
+current-version:       1526.31.1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64 ]
+    symbols:              [ _SharingHUDVersionNumber, _SharingHUDVersionString ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ dyld_stub_binder ]
+...

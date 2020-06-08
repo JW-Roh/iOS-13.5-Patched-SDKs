@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: 'F76E0052-24CB-3454-B201-F26BD182BE9E' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libcharset.1.dylib
+current-version:       2
+compatibility-version: 2
+exports:
+  - archs:                [ arm64 ]
+    symbols:              [ _libcharset_set_relocation_prefix, _locale_charset ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ ___stack_chk_fail, ___stack_chk_guard, _fclose, _fopen,
+                            _free, _fscanf, _getc, _getenv, _malloc, _memcpy, _nl_langinfo,
+                            _realloc, _strcmp, _strcpy, _strlen, _strncmp, _ungetc,
+                            dyld_stub_binder ]
+...

@@ -1,0 +1,15 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: '40BDCADB-E9C8-3EC2-A73A-E3884CFF4AA4' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/CoreServices/Encodings/libGreekConverter.dylib
+current-version:       76
+compatibility-version: 1
+exports:
+  - archs:                [ arm64 ]
+    symbols:              [ ___CFStringEncodingGetGreekConverterDefinition ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ dyld_stub_binder ]
+...

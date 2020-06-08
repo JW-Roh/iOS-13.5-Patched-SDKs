@@ -1,0 +1,16 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: '74E1F337-9BBC-3D3F-9F23-4C417A613575' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/SharingXPCServices.framework/SharingXPCServices
+current-version:       1526.31.1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64 ]
+    symbols:              [ _SharingXPCServicesVersionNumber,
+                            _SharingXPCServicesVersionString ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ dyld_stub_binder ]
+...

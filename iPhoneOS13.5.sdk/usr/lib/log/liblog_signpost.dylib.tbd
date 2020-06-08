@@ -1,0 +1,18 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: '50279735-94BF-34C2-85CB-3FA09D50056A' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/log/liblog_signpost.dylib
+current-version:       42.2
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64 ]
+    symbols:              [ _OSLogCopyFormattedString ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ ___CFConstantStringClassReference, _objc_alloc,
+                            _objc_msgSend, _strncmp, dyld_stub_binder ]
+    objc-classes:         [ _NSAttributedString ]
+...

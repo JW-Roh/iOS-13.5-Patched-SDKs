@@ -1,0 +1,24 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: '812DDB1B-FE4D-3DDE-A33D-D7A179194BF4' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/PLSnapshot.framework/PLSnapshot
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64 ]
+    objc-classes:         [ _PLSnapshotCPUStats, _PLSnapshotUtilities ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ __NSConcreteGlobalBlock, ___stack_chk_fail,
+                            ___stack_chk_guard, __objc_empty_cache,
+                            __os_assumes_log, __os_log_debug_impl,
+                            __os_log_default, _coalition_info_resource_usage,
+                            _dispatch_once, _free, _mach_timebase_info, _malloc,
+                            _objc_msgSend, _os_log_type_enabled,
+                            _proc_listcoalitions, _proc_pid_rusage,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSObject ]
+...

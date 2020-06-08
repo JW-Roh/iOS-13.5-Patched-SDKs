@@ -1,0 +1,22 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: 'EACC1E5A-FF31-3812-BBC1-EFB4009FEAA3' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /System/Library/PrivateFrameworks/FontServices.framework/libGSFontCache.dylib
+current-version:       1
+compatibility-version: 1
+objc-constraint:       retain_release
+exports:
+  - archs:                [ arm64 ]
+    symbols:              [ _GSFontCacheGetData, _GSFontCacheGetDictionary ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ ___CFConstantStringClassReference, _objc_msgSend,
+                            dyld_stub_binder ]
+    objc-classes:         [ _NSConstantArray, _NSConstantDictionary,
+                            _NSConstantIntegerNumber, __NSConstantArray,
+                            __NSConstantData, __NSConstantDictionary,
+                            __NSConstantNumberBool, __NSConstantNumberFloat,
+                            __NSConstantNumberInt ]
+...

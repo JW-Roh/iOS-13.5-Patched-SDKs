@@ -1,0 +1,12 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: 'FCF4A87A-FFAC-3649-B4BC-26A37272B0A1' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libAWDProtobufFacetimeiMessage.dylib
+current-version:       1
+compatibility-version: 1
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ dyld_stub_binder ]
+...

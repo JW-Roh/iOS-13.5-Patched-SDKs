@@ -1,0 +1,21 @@
+--- !tapi-tbd-v2
+archs:                 [ arm64 ]
+uuids:                 [ 'arm64: 'AABDA254-6174-3EF0-9D59-45986667A88E' ]
+platform:              ios
+flags:                 [ flat_namespace ]
+install-name:          /usr/lib/libIOACIPCICEBB.dylib
+current-version:       1
+compatibility-version: 1
+exports:
+  - archs:                [ arm64 ]
+    symbols:              [ __ZN17IOACIPCICEBBClass13timesyncAsyncEjjPvjPFvS0_iS0_ES0_,
+                            __ZN17IOACIPCICEBBClass17registerTimeEventEjPFvPviPS0_jES0_,
+                            __ZN17IOACIPCICEBBClass19deregisterTimeEventEjPFvPviES0_ ]
+undefineds:
+  - archs:                [ arm64 ]
+    symbols:              [ _IOConnectCallAsyncScalarMethod,
+                            _IONotificationPortGetMachPort,
+                            __ZN12IOACIPCClass4lockEv,
+                            __ZN12IOACIPCClass6unlockEv, ___stack_chk_fail,
+                            ___stack_chk_guard, dyld_stub_binder ]
+...
